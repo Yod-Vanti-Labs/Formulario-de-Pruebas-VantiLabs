@@ -1,0 +1,101 @@
+<html>
+      <head>
+	  <meta charset="utf-8">
+		  
+	  <link rel="stylesheet" href="CSS3 menu_almacen_files/css3menu1/style.css" type="text/css" /><style type="text/css">._css3m{display:none}</style>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	  
+    <title>Formulario_Pruebas_Vantilabs</title>
+		  
+		  <script src='https://www.google.com/recaptcha/api.js?render=6Leb4_UaAAAAAOKlGEKpDkSFRhfETC3igiY5RikF'> 
+</script>
+<script>
+grecaptcha.ready(function() {
+grecaptcha.execute('6Leb4_UaAAAAAOKlGEKpDkSFRhfETC3igiY5RikF', {action: 'formulario'})
+.then(function(token) {
+var recaptchaResponse = document.getElementById('recaptchaResponse');
+recaptchaResponse.value = token;
+});});
+</script>
+<script type="text/javascript">
+    function checkSubmit() {
+    document.getElementById("btsubmit").value = "Enviando...";
+    document.getElementById("btsubmit").disabled = true;
+    return true;
+}
+</script>		  
+		 
+  </head>
+     <body>
+	 
+<center>
+
+<p><h1><font face="Georgia, Arial" align="center" color="#B41D4E">Ingresa Datos de Pruebas</font></h1>
+<hr>
+	</hr>
+<p>
+<p>
+    
+<form action="smartsheetts1.php" name = "form1" nsubmit="return checkSubmit();" method="POST" autocomplete="off">
+	
+<table border=2>
+<thead><img src="VanTI Labs.png" alt="Formularios VantiLabs, VUELVA A CARGAR LA PAGINA" width="434" height="109" title="Pagina De Pruebas Ingresa Datos Por Favor"/></thead>
+<p>
+
+ <div class= "w3-container">
+        
+        <table  border ="1" class= "w4-table-all">
+        <thead class= "w3-green">
+        <tr><th>Atributos </th>
+        <th>Datos</th></tr>
+          </thead>
+		  
+   <tbody>
+
+<tr class="w3-Yellow">
+<td><center><b><font face="Georgia, Arial" align="center" color="#B41D4E" > Nombre : </font></b></center></td>
+<td class="w3-Blue"><input type="text" name="nombre" class="w3-input w3-border w3-round-xxlarge" id="nombre" placeholder="Ingresa Nombre" size = "40" pattern="[a-A-z-Z]{1,90}" title="Debe corresponder a solo a letras, ejem aAzZeE" maxlength="50" style="text-align:center" required ><br></td>
+</tr>
+
+<tr class="w3-yellow">
+<td><center><b><font face="Georgia, Arial" align="center" color="#B41D4E" >Email : </font></b></center></td>
+<td class="w3-Blue"><input type="text" name="email" class="w3-input w3-border w3-round-xxlarge" id="email" placeholder="Ingresa Email" size = "40" pattern="[a-A-z-Z-1-12-@-&-]{1,90}" title="Debe corresponder a solo a Texto Conjugado, ejem aAzZeE@%$" maxlength="50" style="text-align:center" required ><br></td>
+</tr>
+
+<tr class="w3-yellow">
+<td><center><b><font face="Georgia, Arial" align="center" color="#B41D4E" >Telefono : </font></b></center></td>
+<td class="w3-Blue"><input type="text" name="telefono" class="w3-input w3-border w3-round-xxlarge" id="telefono" placeholder="Ingresa Telefono" size = "40" pattern="[0-1-10-12-100]{1,10}" title="Debe corresponder a solo a Numeros, ejem 5527143516" maxlength="12" style="text-align:center" required><br></td>
+</tr>
+
+<tr class="w3-yellow">
+<td><center><b><font face="Georgia, Arial" align="center" color="#B41D4E" >Mensaje : </font></b></center></td>
+<td class="w3-Blue"><textarea name="mensaje" class="w3-input w3-border w3-round-xxlarge" id="mensaje" placeholder="Ingresa Mensaje" size = "40" pattern="[a-A-z-Z-1-12-@-&-]{1,90}" title="Debe corresponder a solo a Texto Conjugado, ejem aAzZeE@%$" maxlength="50" style="text-align:center" required> </textarea><br></td>
+</tr>
+
+<tr class="w3-yellow">
+<td><center><b><font face="Georgia, Arial" align="center" color="#B41D4E" >ID Clientes : </font></b></center></td>
+<td class="w3-Blue"><input type="text" name="id_clientes" class="w3-input w3-border w3-round-xxlarge" id="id_clientes" placeholder="ID Clientes" size = "40" pattern="[a-A-z-Z-1-12-@-&-]{1,90}" title="Debe corresponder a solo a Texto Conjugado, ejem aAzZeE@%$" maxlength="50" style="text-align:center" readonly='readonly' value= "999-999-9999"><br></td>
+</tr>
+
+<tr class="w3-yellow">
+<td><center><b><font face="Georgia, Arial" align="center" color="#B41D4E" >ID Campana : </font></b></center></td>
+<td class="w3-Blue"><input type="text" name="id_campana" class="w3-input w3-border w3-round-xxlarge" id="id_campana" placeholder="ID Campaña" size = "40" pattern="[a-A-z-Z-1-12-@-&-]{1,90}" title="Debe corresponder a solo a Texto Conjugado, ejem aAzZeE@%$" maxlength="50" style="text-align:center" readonly='readonly' value= "C0109P"><br></td>
+</tr>
+         </tbody>
+            </table>
+        
+	    <input type="reset" name="boton" value="Restablecer" class="w3-input w3-border w3-round-xxlarge w3-green" style=" width:30%"> 
+		<input type="submit" class="w3-input w3-border w3-round-xxlarge w3-green submit" value = "Enviar" name = "Enviar" style="width:30%"><br>
+		
+		  </div>
+	
+	<input type="hidden" name="recaptcha_response" id="recaptchaResponse">
+	
+	 <input name="keypriv" type="hidden" value="6Leb4_UaAAAAAG6FP3X182QUpAHfDVIAtpyMMI9z">
+	
+	<input name="redireccion" type="hidden" id="redireccion" value="Gracias.html"> 
+
+</form>
+</center>
+</body>
+</html>
